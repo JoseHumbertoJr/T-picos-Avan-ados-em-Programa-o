@@ -7,11 +7,13 @@ import CarrinhoDeCompras from './CarrinhoDeCompras';
 class Loja extends Component {
   render() {
     return (
-      <LojaProvider>
-        <BarraDeBusca/>
-        <ListaDeProdutos/>
-        <CarrinhoDeCompras/>
-      </LojaProvider>
+      <>
+        <LojaProvider>
+          <BarraDeBusca/>
+          <CarrinhoDeCompras/>
+          <ListaDeProdutos/>
+        </LojaProvider>
+      </>
     );
   }
 }

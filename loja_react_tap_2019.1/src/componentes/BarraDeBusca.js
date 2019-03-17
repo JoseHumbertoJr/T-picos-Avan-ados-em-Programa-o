@@ -6,12 +6,14 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Badge from 'react-bootstrap/Badge';
+import Login from './Login';
+import Registro from './Registro';
 
 class BarraDeBusca extends Component {    
   render() {
     return (
       <Navbar bg="light" fixed="top" background-color="#004085">
-        <Navbar.Brand>Loja São Lunguin</Navbar.Brand>
+        <Navbar.Brand>Loja São Longuinho</Navbar.Brand>
         <Nav>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -27,6 +29,7 @@ class BarraDeBusca extends Component {
               ) }
             </React.Fragment>
           </Navbar.Collapse>
+          <Button variant="primary" onClick={Login}></Button>
         </Nav>
       </Navbar>
     );
