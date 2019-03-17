@@ -3,6 +3,9 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Loja from './Loja';
 
 class Login extends Component {
+    loja = () =>{
+        this.props.history.push('/');
+      } 
     render() {
         return ( 
             <body>
@@ -15,7 +18,7 @@ class Login extends Component {
                         <input type="text" placeholder="Enter Nome" name="uname" required></input>
                         <label for="psw"><b>Senha</b></label>
                         <input type="password" placeholder="Enter Senha" name="psw" required></input>
-                        <button type="submit" onClick={Loja}>Login</button>
+                        <button type="submit" onClick={() => this.loja()}>Login</button>
                         <label>
                             <input type="checkbox" name="remember"/> Me deixa conectado
                         </label>

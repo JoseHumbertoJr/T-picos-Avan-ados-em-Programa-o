@@ -7,6 +7,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Registro from './Registro';
 import Login from './Login';
 import Loja from './Loja';
+import DetalheProduto from './DetalheProduto';
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
             <Route path="/" exact component={Loja} />
             <Route path="/registro" exact component={Registro} />
             <Route path="/login" exact component={Login} />
-            <Route path="/detalhe"/>
+            <Route path="/produto/:id" exact component={DetalheProduto} />
           </Switch>
         </BrowserRouter>
       </>

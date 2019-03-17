@@ -6,10 +6,15 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Badge from 'react-bootstrap/Badge';
-import Login from './Login';
-import Registro from './Registro';
+import {withRouter} from 'react-router-dom';
 
-class BarraDeBusca extends Component {    
+class BarraDeBusca extends Component {  
+  login = () =>{
+    this.props.history.push('/login');
+  } 
+  registro = () =>{
+    this.props.history.push('/registro');
+  } 
   render() {
     return (
       <Navbar bg="light" fixed="top" background-color="#004085">
@@ -29,8 +34,9 @@ class BarraDeBusca extends Component {
               ) }
             </React.Fragment>
           </Navbar.Collapse>
-          <Button variant="primary" onClick={Login}></Button>
+          <p><button onClick={() => this.login()}>Login</button></p>
         </Nav>
+        <p><button onClick={() => this.registro()}>Registrar-se</button></p>
       </Navbar>
     );
   }
@@ -38,4 +44,4 @@ class BarraDeBusca extends Component {
 
 BarraDeBusca.contextType = LojaContext;
 
-export default BarraDeBusca;
+export default withRouter(BarraDeBusca);

@@ -3,23 +3,21 @@ import React , {Component} from 'react';
 class Registro extends Component {
     render() {
         return(
-            <>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Nome Completo</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email"/>
-                        <small id="emailHelp" class="form-text text-muted"></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha"/>
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                        <label class="form-check-label" for="exampleCheck1">Salva Login</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+            <>      <img src="https://www.ilzas.com.br/img/cadastro.png" width="25%"></img>
+                    <form method="post">
+                        <div display="flex;">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div>
+                            <label for="mail">Senha:</label>
+                            <input type="email" id="mail" />
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                    </form>
             </>
         );
     }
