@@ -5,13 +5,13 @@ import Loja from './Loja';
 class Login extends Component {
     loja = () =>{
         this.props.history.push('/');
-      } 
+    } 
     render() {
         return ( 
             <body>
                 <form component={Loja}>
                     <div class="imgcontainer">
-                        <img src="https://www.empreendaecommerce.com.br/wp-content/uploads/2019/02/Empreenda-Ecommerce-logo.png" alt="Avatar" class="avatar"/>
+                        <img width="50%" src="https://www.empreendaecommerce.com.br/wp-content/uploads/2019/02/Empreenda-Ecommerce-logo.png" alt="Avatar" class="avatar"/>
                     </div>
                     <div class="container">
                         <label for="uname"><b>Nome de Usuário</b></label>
