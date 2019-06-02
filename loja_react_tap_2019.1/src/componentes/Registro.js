@@ -6,21 +6,26 @@ class Registro extends Component {
     } 
     render() {
         return(
-            <>      <img src="https://www.ilzas.com.br/img/cadastro.png" width="25%"></img>
-                    <form>
-                        <div display="flex;">
-                            <label for="name">Nome:</label>
-                            <input type="text" id="name" />
+            <>     <div class="cadastro">
+                        <div class="logo">
+                            <img class="logo" src="https://www.ilzas.com.br/img/cadastro.png" width="50%"></img>
+                            <h1>Cadastre-se</h1>
                         </div>
-                        <div>
-                            <label for="mail">Senha:</label>
-                            <input type="email" id="mail" />
-                        </div>
+                        <form class="logo">
+                            <div>
+                                <label for="name">Nome: </label>
+                                <input type="text" id="name" />
+                            </div>
+                            <div>
+                                <label for="mail">Senha: </label>
+                                <input type="email" id="mail" />
+                            </div>
 
-                        <div class="button">
-                            <button type="submit" onClick={() => this.login()}>Cadastrar</button>
-                        </div>
-                    </form>
+                            <div class="button">
+                                <button type="submit" onClick={() => this.login()}>Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
             </>
         );
     }

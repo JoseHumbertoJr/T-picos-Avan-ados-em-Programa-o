@@ -34,9 +34,10 @@ class BarraDeBusca extends Component {
               ) }
             </React.Fragment>
           </Navbar.Collapse>
-          <p><button onClick={() => this.login()}>Login</button></p>
         </Nav>
-        <p><button onClick={() => this.registro()}>Registrar-se</button></p>
+        <a><button onClick={() => this.login()}>Login</button></a>
+        <a><button onClick={() => this.registro()}>Registrar-se</button></a>
+        <a href="https://tawk.to/chat/5ce038b2d07d7e0c63944041/default"><button>Chat-Online</button></a>
       </Navbar>
     );
   }
